@@ -3,6 +3,14 @@
  *Description : generates Yale compatible keys*
  **********************************************/
 
+// *** modifications were implemented to accept key cut codes as parameters ***
+// changes enable use with 3DKeys - mod's and 3DKeys implemented by Ed Sellers
+// key code parameters and a code designation for generating:
+//   a key blank - no cuts
+//   a bump key  - all deep cuts
+//   a code key  - use the cuts supplied to cut the key
+// 
+
 use <Library/Write.scad> 
 
 // preview[view:south, tilt:side]

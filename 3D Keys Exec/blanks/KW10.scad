@@ -11,6 +11,15 @@
 // Since the keys and locks I have were all designed in imperial units, the
 // constants in this file will be defined in inches.  The mm function
 // allows us to retain the proper size for exporting a metric STL.
+
+// *** modifications were implemented to accept key cut codes as parameters ***
+// changes enable use with 3DKeys - mod's and 3DKeys implemented by Ed Sellers
+// key code parameters and a code designation for generating:
+//   a key blank - no cuts
+//   a bump key  - all deep cuts
+//   a code key  - use the cuts supplied to cut the key
+// 
+
 function mm(i) = i*25.4;
 
 module rounded(size, r) {
